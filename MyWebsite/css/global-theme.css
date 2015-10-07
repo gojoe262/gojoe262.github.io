@@ -41,6 +41,7 @@ p {
     background-color: grey;
     float: left;
     padding-top: 20px;
+    width: 600px;
 }
 
 .banner .banner-text h1 {
