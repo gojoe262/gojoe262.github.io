@@ -1,0 +1,137 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color: orange;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.875em;
+}
+
+/******* Banner *******/
+.banner {
+    height: 175px;
+    padding: 15px;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.banner .banner-text {
+    background-color: grey;
+    float: left;
+    padding-top: 20px;
+}
+
+.banner .banner-text h1 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.banner .banner-pic {
+    position: relative;
+    float: right;
+    background-color: red;
+}
+
+.banner .banner-links {
+    position: absolute;
+    bottom: 0;
+}
+
+.banner .banner-links li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.banner .banner-links li:hover {
+    background-color: grey;
+}
+
+.banner .banner-links li>a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    padding: 10px 20px 10px 20px;
+}
+
+.banner .banner-links .active{
+    background-color: white;
+}
+
+/******* Main Content *******/
+.full-width-content {
+    background-color: blue;
+    float: left;
+    width: 960px;
+}
+
+.content {
+    /* Can be used with sidebar */
+    width: 570px;
+    background-color: red;
+    float: left;
+    padding: 7px;
+    margin: 8px;
+}
+
+/******* Side Bar *******/
+.sidebar {
+    background-color: yellow;
+    width: 330px;
+    float: right;
+    padding: 7px;
+    margin: 8px;
+}
+
+/******* Footer *******/
+footer {
+    height: 50px;
+    clear: both;
+    background-color: purple;
+    padding: 15px;
+}
+
+/******* Boxes *******/
+.box {
+    width: 190px;
+    height: 270px;
+    background-color: lightblue;
+    float: left;
+    margin: 6px;
+    padding: 15px;
+    border: 4px rgb(0, 0, 0) solid;
+}
+
+.box img {
+    width: 190px;
+    height: 115px;
+}

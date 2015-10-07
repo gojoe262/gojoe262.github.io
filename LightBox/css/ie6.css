@@ -1,0 +1,24 @@
+#container #nav li a {
+float: left;
+}
+
+#container ul#nav, #slogan {
+ overflow: hidden;
+}
+
+.arrow {
+ display: none;
+}
+
+#secondaryContent cite {
+ margin-top: -25px;
+}
+
+#recentWork ol {
+ padding-right: 36px;
+}
+
+
+#main {
+ height: 100%;
+}

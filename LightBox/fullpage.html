@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+<script src="js/jquery.simpleSlide.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript"><!--
+	$(document).ready( function() {
+		simpleSlide({'fullscreen': 'true', 'swipe':'true', 'set_speed': 1000});
+		var timer = '';
+		
+		$(window).resize( function() {
+			clearTimeout(timer);
+			timer = setTimeout('resizer()', 300);
+		});
+		
+		window.onorientationchange = function() {
+			resizer();
+		}
+	});
+	
+	function resizer() {
+		var agent = navigator.userAgent.toLowerCase();
+		var is_iphone = ((agent.indexOf('iphone') != -1));
+		var is_ipad = ((agent.indexOf('ipad') != -1));
+		var is_msie = ((agent.indexOf('msie') != -1));
+		if(is_iphone || is_ipad || is_msie){
+			location.reload(true);
+		} else {					
+			simpleSlide({'fullscreen': 'true', 'swipe':'true', 'set_speed': 1000});
+		};	
+	}
+	
+// --></script>	
+<style>
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.left-button {
+	position: fixed; 
+	top:0px;
+	left:0px;
+	width:100px;
+	height:100px;
+	cursor:pointer;
+	font-size:24px;
+	color:white;
+	background-color: black;
+}
+
+.right-button {
+	position: fixed;
+	top:0px;
+	right:0px;
+	width:100px;
+	height:100px;
+	cursor:pointer;
+	font-size:24px;
+	color:white;
+	background-color: black;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="simpleSlide-window" rel="this_particular_slideshow">
+        <div class="simpleSlide-tray" rel="this_particular_slideshow">
+            <div class="simpleSlide-slide" rel="this_particular_slideshow">
+				    <img src="images/recentWork/recentWork1.jpg" alt="Recent Work" />
+
+            </div>
+            <div class="simpleSlide-slide" rel="this_particular_slideshow">
+				    <img src="images/recentWork/recentWork2.jpg" alt="Recent Work" />
+
+            </div>
+            <div class="simpleSlide-slide" rel="this_particular_slideshow">
+				    <img src="images/recentWork/recentWork3.jpg" alt="Recent Work" />
+
+        	</div>
+        </div>
+    </div>
+    <div class="left-button" rel="this_particular_slideshow">&lt;</div>
+    <div class="right-button" rel="this_particular_slideshow">&gt;</div>	
+</body>
+</html>
