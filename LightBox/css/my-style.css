@@ -1,4 +1,88 @@
 /*Generic Styles*/
 body {
-    background: #eeebe9 url() 0 0 no-repeat;
+    background: #f0efed url(../images/bg.jpg) repeat-x;
+    text-align: center;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 25px;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 25px 0;
+}
+
+h2 {
+    font-size: 41px;
+    color: #2f231e;
+    padding-bottom: 25px;
+    margin-top: 45px;
+    border-bottom: 1px solid #cec5c0;
+}
+
+h3 {
+    color: #745459;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+h4 {
+    color: #2f231e;
+    line-height: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+hr {
+    background: none;
+    border: 1px solid #cec5c0;
+    margin: 34px 0;
+}
+
+p {
+    color: #645a56;
+    font-size: 13px;
+    font-family: arial;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    width: 1002px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+    background: #f8f7f5 url(../images/containerBG.jpg) repeat-x;
+}
+
+/* NAVIGATION */
+#nav {
+    float: right;
+    height: 111px;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+#nav li {
+    float: left; /* Make nav horizontal */
+    font-size: 11px;
+    /*font-family: arial; Not really needed because it takes the parent*/
+    text-align: center;
+    margin: 20px 90px 20px 20px;
+    /*margin-right: 90px;*/
+    width: 37px;
+    list-style-type: none;
+}
+
+#nav li a {
+    color: #c7b18d;
+    /*display: block;*/
+    /*padding-top: 45px;*/
+    text-transform: uppercase;
+    text-align: center;
 }

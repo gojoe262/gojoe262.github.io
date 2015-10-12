@@ -71,6 +71,7 @@ p {
     padding: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    /*text-transform: uppercase;*/
 }
 
 .banner .banner-links li:hover {
