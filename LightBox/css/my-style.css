@@ -71,7 +71,7 @@ a:hover {
 #nav li {
     float: left; /* Make nav horizontal */
     font-size: 11px;
-    /*font-family: arial; Not really needed because it takes the parent*/
+    /*font-family: arial; Not really needed because it is alread in the parent*/
     text-align: center;
     margin: 20px 90px 20px 20px;
     /*margin-right: 90px;*/
@@ -81,8 +81,81 @@ a:hover {
 
 #nav li a {
     color: #c7b18d;
+    display: block;
+    padding-top: 45px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#li_home {
+	background: url(../images/home-trans.png) no-repeat 0 0;
+}
+
+#li_work {
+    background: url(../images/work-trans.png) no-repeat 0 0;
+}
+
+#li_about {
+    background: url(../images/about-trans.png) no-repeat 0 0;
+}
+
+#li_contact {
+    background: url(../images/contact-trans.png) no-repeat 10px 0;
+    margin-right: 23px;
+    width: 60px;
+}
+
+#nav li a {
+    color: #c7b18d;
     /*display: block;*/
     /*padding-top: 45px;*/
     text-transform: uppercase;
     text-align: center;
+}
+
+/* SLOGAN */
+#slogan {
+    height: 145px;
+    clear: both;
+}
+
+#slogan h1 {
+    margin: 0 0 0 165px;
+    background: url(../images/logo-trans.png) no-repeat;
+    width: 124px;
+    height: 67px;
+    position: relative;
+    z-index: 10;
+    text-indent: -99999px; /*  Show text off the left side of the screen.
+                            Allows Search Engine to see text but not the user */
+    top: 40px;
+}
+
+#slogan h1 a {
+    display: block;
+    width: 127px;
+    height: 67px;
+}
+
+#slogan img {
+    position: absolute;
+    top: -87px;
+    left: -40px;
+}
+
+#slogan p {
+    margin: -37px 200px 0 319px;
+    padding-left: 27px;
+    padding-top: 5px;
+    font-size: 18px;
+    color: #a68a7d;
+    border-left: 1px solid #4f3b33;
+}
+
+#slogan a {
+    color: white;
+}
+
+#li_home {
+
 }
