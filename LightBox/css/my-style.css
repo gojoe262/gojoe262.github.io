@@ -88,7 +88,15 @@ a:hover {
 }
 
 #li_home {
-	background: url(../images/home-trans.png) no-repeat 0 0;
+    width: 37px;
+    height: 39px;
+	background: url(../images/home-trans-sprite.png) no-repeat 0 -39px;
+}
+
+#li_home:hover {
+    width: 37px;
+    height: 39px;
+	background: url(../images/home-trans-sprite.png) no-repeat 0 0;
 }
 
 #li_work {
@@ -156,6 +164,38 @@ a:hover {
     color: white;
 }
 
-#li_home {
+/* MAIN CONTENT */
 
+#main {
+    padding: 0 36px 100px 347px;
+    overflow: hidden;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+/*#main h2 {
+    padding-left: 0;
+}*/
+
+#primaryContent {
+    float: left;
+    width: 334px;
+}
+
+#primaryContent ul h3 {
+    text-indent: -9999px;
+    height: 34px; /* Limit the height to only show part of the image */
+    margin-bottom: 13px;
+}
+
+#primaryContent #first h3 {
+    background: url(../images/whatWeDoHeadings.png) no-repeat 0 0; /* Should we offset the background for #first: NO */
+}
+
+#primaryContent #second h3 {
+    background: url(../images/whatWeDoHeadings.png) no-repeat 0 -34px; /* Should we offset the background for #second: YES */
+}
+
+#primaryContent #third h3 {
+    background: url(../images/whatWeDoHeadings.png) no-repeat 0 -68px; /* Should we offset the background for #third: YES */
 }
