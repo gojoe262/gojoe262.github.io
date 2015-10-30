@@ -10,16 +10,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="89.904427mm"
-   height="54.908867mm"
-   viewBox="0 0 318.559 194.55897"
+   width="90.72155mm"
+   height="55.407925mm"
+   viewBox="0 0 321.45433 196.32729"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="/home/joe/Documents/WebDevProg/MyWebsite/img/logo/transparent/fullColorLogoOnTransparent.png"
-   inkscape:export-xdpi="197.76559"
-   inkscape:export-ydpi="197.76559">
+   inkscape:export-filename="/home/joe/Documents/WebDevProg/MyWebsite/img/logo/transparent/normalOnTransparent.png"
+   inkscape:export-xdpi="195.9843"
+   inkscape:export-ydpi="195.9843">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,13 +28,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="99.099895"
-     inkscape:cy="129.38297"
+     inkscape:cx="139.83529"
+     inkscape:cy="130.26714"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1280"
-     inkscape:window-height="975"
+     inkscape:window-height="973"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -46,10 +46,10 @@
      id="defs4">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="330.00001 : 610.18107 : 1"
-       inkscape:vp_y="0 : 999.99993 : 0"
-       inkscape:vp_z="1507.0946 : 666.18105 : 1"
-       inkscape:persp3d-origin="372.04725 : 350.78738 : 1"
+       inkscape:vp_x="330.00001 : 610.18109 : 1"
+       inkscape:vp_y="0 : 999.99998 : 0"
+       inkscape:vp_z="1507.0947 : 666.18108 : 1"
+       inkscape:persp3d-origin="372.04725 : 350.7874 : 1"
        id="perspective5122" />
     <linearGradient
        id="linearGradient5114"
@@ -76,13 +76,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-182.58447,-405.58269)">
+     transform="translate(-181.13679,-404.69853)">
     <g
        id="g4061"
        transform="translate(-305.81674,6.0216648)" />
     <path
        sodipodi:type="star"
-       style="fill:#1a1a1a;fill-opacity:1;stroke:#050505;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.39822435;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path5140"
        sodipodi:sides="4"
        sodipodi:cx="140"
