@@ -100,17 +100,37 @@ a:hover {
 }
 
 #li_work {
-    background: url(../images/work-trans.png) no-repeat 0 0;
+    width: 37px;
+    height: 36px;
+	background: url(../images/work-trans-sprite.png) no-repeat 0 -36px;
+}
+
+#li_work:hover {
+    width: 37px;
+    height: 36px;
+    background: url(../images/work-trans-sprite.png) no-repeat 0 0;
 }
 
 #li_about {
-    background: url(../images/about-trans.png) no-repeat 0 0;
+    width:37px;
+    height: 35px;
+    background: url(../images/about-trans-sprite.png) no-repeat 0 -35px;
+}
+
+#li_about:hover {
+    width:37px;
+    height: 35px;
+    background: url(../images/about-trans-sprite.png) no-repeat 0 0;
 }
 
 #li_contact {
-    background: url(../images/contact-trans.png) no-repeat 10px 0;
-    margin-right: 23px;
-    width: 60px;
+    height: 30px;
+    background: url(../images/contact-trans-sprite.png) no-repeat 10px -30px;
+}
+
+#li_contact:hover {
+    height: 30px;
+    background: url(../images/contact-trans-sprite.png) no-repeat 10px 0;
 }
 
 #nav li a {
@@ -198,4 +218,56 @@ a:hover {
 
 #primaryContent #third h3 {
     background: url(../images/whatWeDoHeadings.png) no-repeat 0 -68px; /* Should we offset the background for #third: YES */
+}
+
+#secondaryContent {
+    float: right;
+    width: 249px;
+    padding-top: 45px;
+    position: relative;
+}
+
+#secondaryContent cite {
+    font: bold normal 15px arial;
+    color: #2f231e;
+    float: right;
+    padding-right: 20px;
+    padding-top: 35px;
+
+}
+
+#secondaryContent cite span {
+    font-size: 10px;
+    line-height: 10px;
+    display: block;
+    color: #89451f;
+}
+
+/* blockquote */
+blockquote {
+    background: #ebe7e4;
+    color: #7f6357;
+    padding: 23px;
+}
+
+blockquote p {
+    font-size: 20px;
+    color: #7f6357;
+    margin-bottom: 1em;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: georgia;
+    font-style: italic;
+}
+
+/* ARROW */
+.arrow {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-top: 30px solid #ebe7e4;
+    border-left: 60px solid #f7f5f4;
+    border-right: 10px solid #f7f5f4;
+    position: absolute;
+    right: 30px;
 }
