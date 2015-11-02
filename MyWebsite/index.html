@@ -6,25 +6,31 @@
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/global-theme.css" rel="stylesheet">
         <link href="css/hover.css" rel="stylesheet">
+        <link href="css/nav-style.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <header class="header">
                 <figure class="header-pic">
-                    <img src="img/profile-pic.png" alt="Joe Schueller">
+                    <img src="img/logo/normalOnBlack.png" alt="Joe Schueller">
                 </figure>
                 <div class="header-text">
                     <h1>Joe Schueller</h1>
                     <h3>The perfect mix of creativity and technical skill</h3>
                 </div>
                 <div class="header-links">
-                    <nav>
+                    <nav id='cssmenu'>
                         <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#">School</a></li>
-                            <li><a href="work-experience.html">Work Experience</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="projects.html">Projects</a></li>
+                            <li class='active'><a href='index.html'>Home</a></li>
+                            <li class=''><a href='projects.html'>Projects</a></li>
+                            <li class=''><a href='work-experience.html'>Work Experience</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Dropdown 1</a></li>
+                                    <li><a href="#">Dropdown 2</a></li>
+                                    <li><a href="#">Dropdown 3</a></li>
+                                </ul>
+                            </li>
+                            <li class=''><a href='#'>Contact</a></li>
                         </ul>
                     </nav>
                 </div>
