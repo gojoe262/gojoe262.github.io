@@ -164,7 +164,7 @@ p {
 
 .header .header-links nav ul.dropdown {
     background: #ffffff;
-    border-top: 2px solid #47c9af;
+    border: 2px solid #47c9af;
 }
 
 .header .header-links nav > ul > li {
