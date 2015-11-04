@@ -44,24 +44,30 @@ p {
 
 /***** BUTTON *****/
 .btn {
-    -webkit-border-radius: 10;
-    -moz-border-radius: 10;
-    border-radius: 10px;
+    border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
     color: #ffffff;
     font-size: 27px;
     background: #bd5f39;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 8px 20px;
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
     width: 100px;
     height: 25px;
     text-align: center;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
 }
 
 .btn:hover {
     background: #c07353;
     text-decoration: none;
+
 }
 
 /******* HEADER *******/
@@ -96,10 +102,10 @@ p {
     position: absolute;
     z-index: -1;
     content: '';
-    top: 100%;
-    left: 5%;
+    top: 105%;
+    left: 0%;
     height: 20px;
-    width: 90%;
+    width: 100%;
     opacity: 0;
     background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
@@ -119,16 +125,25 @@ p {
     width: 300px;
 }
 
-.header .header-links {
+.header .header-nav {
     position: absolute;
     bottom: 0;
 }
 
 /****** NAVIGATION ******/
-.header .header-links nav,
-.header .header-links nav ul,
-.header .header-links nav ul li,
-.header .header-links nav ul li a {
+/* From: http://cssmenumaker.com/menu/flat-tabbed-menu Modified to support 1 level dropdown menu */
+
+/*** NAVIGATION Top level ***/
+.header .header-nav nav li ul{
+    position: absolute;
+    z-index: 100;
+}
+
+.header .header-nav nav,
+.header .header-nav nav > ul,
+.header .header-nav nav > ul > li,
+.header .header-nav nav > ul > li > a
+{
     margin: 0;
     padding: 0;
     border: 0;
@@ -141,8 +156,14 @@ p {
     box-sizing: border-box;
 }
 
-.header .header-links nav:after,
-.header .header-links nav > ul:after {
+.header .header-nav nav {
+    width: auto;
+    border-bottom: 2px solid #47c9af;
+    line-height: 1;
+}
+
+.header .header-nav nav:after,
+.header .header-nav nav > ul:after {
     content: ".";
     display: block;
     clear: both;
@@ -151,51 +172,14 @@ p {
     height: 0;
 }
 
-.header .header-links nav {
-    width: auto;
-    border-bottom: 2px solid #47c9af;
-    line-height: 1;
-    width: 101%;
-}
-
-.header .header-links nav ul {
-  /*background: #ffffff;*/
-}
-
-.header .header-links nav ul.dropdown {
-    background: #ffffff;
-    border: 2px solid #47c9af;
-}
-
-.header .header-links nav > ul > li {
+.header .header-nav nav > ul > li {
     float: left;
 }
 
-.header .header-links nav.align-center > ul {
-    font-size: 0;
-    text-align: center;
-}
-
-.header .header-links nav.align-center > ul > li {
-    display: inline-block;
-    float: none;
-}
-
-.header .header-links nav.align-right > ul > li {
-    float: right;
-}
-
-.header .header-links nav.align-right > ul > li > a {
-    margin-right: 0;
-    margin-left: -4px;
-}
-
-.header .header-links nav ul.dropdown > li > a,
-.header .header-links nav > ul > li > a {
+.header .header-nav nav > ul > li > a {
     z-index: 2;
     padding: 18px 25px 12px 25px;
     font-size: 15px;
-    font-weight: 400;
     text-decoration: none;
     color: #444444;
     -webkit-transition: all .2s ease;
@@ -203,15 +187,9 @@ p {
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
-    margin-right: -4px;
 }
 
-.header .header-links nav > ul > li.active > a,
-.header .header-links nav > ul > li:hover > a,
-.header .header-links nav > ul > li > a:hover {
-    color: #ffffff;
-}
-.header .header-links nav > ul > li > a:after {
+.header .header-nav nav > ul > li > a:after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -233,30 +211,58 @@ p {
     transform-origin: bottom;
 }
 
-.header .header-links nav ul.dropdown > li.active > a,
-.header .header-links nav ul.dropdown > li:hover > a,
-.header .header-links nav ul.dropdown > li > a:hover {
-    background-color: #47c9af;
-    color:#ffffff;
+/* hover & active */
+.header .header-nav nav > ul > li.active > a,
+.header .header-nav nav > ul > li:hover > a,
+.header .header-nav nav > ul > li > a:hover {
+    color: #ffffff;
 }
 
-.header .header-links nav > ul > li.active > a:after,
-.header .header-links nav > ul > li:hover > a:after,
-.header .header-links nav > ul > li > a:hover:after {
+.header .header-nav nav > ul > li.active > a:after,
+.header .header-nav nav > ul > li:hover > a:after,
+.header .header-nav nav > ul > li > a:hover:after {
     background: #47c9af;
 }
 
-.header .header-links nav ul .dropdown {
-    display: none;
+/*** NAVIGATION 2nd level ***/
+.header .header-nav nav > ul > li > ul,
+.header .header-nav nav > ul > li:hover > ul,
+.header .header-nav nav > ul > li > ul > li,
+.header .header-nav nav > ul > li > ul > li > a  {
+    display: block; /*show*/
 }
 
-.header .header-links nav li:hover ul.dropdown {
-    display: block;
+.header .header-nav nav > ul > li > ul {
+    display: none; /*hide*/
 }
 
-.header .header-links nav li ul{
-    position: absolute;
-    z-index: 100;
+.header .header-nav nav > ul > li > ul {
+    background: #ffffff;
+    border: 2px solid #47c9af;
+}
+
+.header .header-nav nav > ul > li > ul > li > a {
+    padding: 18px 25px 12px 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #444444;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+/* hover & active */
+.header .header-nav nav > ul > li > ul > li.active > a {
+    color: #ffffff;
+    background-color: #96E0D1;
+}
+
+.header .header-nav nav > ul > li > ul > li:hover > a,
+.header .header-nav nav > ul > li > ul > li > a:hover {
+    color:#ffffff;
+    background-color: #47c9af;
 }
 
 /******* CONTENT *******/
