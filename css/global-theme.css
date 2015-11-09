@@ -1,8 +1,13 @@
+/***** FONTS *****/
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+/*@import url(https://fonts.googleapis.com/css?family=Audiowide);*/
+
+/***** COMMON *****/
 
 body {
     background-color: rgb(241, 243, 255);
-    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -82,6 +87,7 @@ p {
     float: left;
     width: 600px;
     padding-left: 20px;
+    font-family: 'Architects Daughter', 'Raleway', sans-serif;
 }
 
 .header .header-text h1 {
@@ -96,8 +102,7 @@ p {
     top: 30px;
 }
 
-/*Shadow underneath picture*/
-.header .header-pic:before {
+.header .header-pic:before { /*Shadow underneath picture*/
     pointer-events: none;
     position: absolute;
     z-index: -1;
@@ -284,12 +289,36 @@ p {
 }
 
 .content figure {
-    width: 300px;
     box-shadow: 7px 10px 10px #737373;
     background-color:#262626;
     text-align: center;
     margin: 0 auto 0.55em;
     margin-bottom: 35px;
+    padding: 10px 0 10px 0;
+}
+
+.content figure.small {
+    width: 200px;
+}
+
+.content figure.small > img {
+    width: 150px;
+}
+
+.content figure.medium {
+    width: 350px;
+}
+
+.content figure.medium > img {
+    width: 300px;
+}
+
+.content figure.large {
+    width: 500px;
+}
+
+.content figure.large > img {
+    width: 450px;
 }
 
 /******* SIDE BAR *******/
