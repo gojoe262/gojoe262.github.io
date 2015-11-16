@@ -265,25 +265,35 @@ p {
 }
 
 /******* CONTENT *******/
+.content-body {
+    color: #4d4d4d;
+}
+
 .content-body h1 {
-    font-size: 36px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    font-size: 24px;
+    margin: 10px 0 24px 0;
+    /*letter-spacing: 1px;*/
+    /*font-weight: bold;*/
+    color:#000000;
+    font-family: 'Architects Daughter', 'Raleway', sans-serif;
 }
 
 .content-body h2 {
-    text-transform: lowercase;
-    font-variant: small-caps;
-    letter-spacing: 4px;
-    margin-top: 28px; /*change to fit the rhythm */
-    margin-bottom: 20px; /*change to fit the rhythm */
-    color: red;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    margin:10px 0 16px 0;
+}
+
+.content-body h3 {
+    /*font-weight: bold;*/
+    font-style: italic;
+    color: #000000;
 }
 
 .content-body p {
 
 }
-
 
 .full-width-content {
     float: left;
@@ -296,10 +306,6 @@ p {
     float: left;
     padding: 20px 7px 7px 20px;
     margin: 8px;
-}
-
-.content h3 {
-    margin-bottom: 10px;
 }
 
 .content figure {
