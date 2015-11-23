@@ -8,18 +8,28 @@
 
     </style>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="http://www.javascriptkit.com/script/script2/StackBoxBlur.js"></script>
+    <script src='http://www.javascriptkit.com/script/script2/StackBoxBlurWrapper.js'></script>
     <script>
-        $(document).ready(function () {
-            alert("QWERTY");
-        });
+    window.onload = function(){ // call after window has loaded (or use jQuery etc and run when DOM has loaded)
 
+        var blur = 0;
+        var blurimage1 = new stackBoxBlurIt('blurimage');
+        var velocity = 1;
+        setInterval(function () {
+            if(blur > 50){
+                velocity = -1;
+            }
+            else if(blur < 0){
+                velocity = 1;
+            }
+            blurimage1.blurit(blur);
+            blur += velocity;
+        },100);
+    }
 
-        function showAlert(message) {
-            // body...
-            alert(message);
-        }
     </script>
     <body>
-        <button type="button" name="button" onclick="showAlert('hi');">Alert</button>
+        <img id="blurimage" src="img/profile-pic.png" alt=""/>
     </body>
 </html>
