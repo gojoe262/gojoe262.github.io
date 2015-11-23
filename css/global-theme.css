@@ -271,28 +271,31 @@ p {
 
 .content-body h1 {
     font-size: 24px;
-    margin: 10px 0 24px 0;
-    /*letter-spacing: 1px;*/
-    /*font-weight: bold;*/
+    margin: 32px 0 16px 0;
     color:#000000;
     font-family: 'Architects Daughter', 'Raleway', sans-serif;
+}
+
+.content-body h1:first-child {
+    margin: 16px 0 16px 0;
 }
 
 .content-body h2 {
     color: #000000;
     font-weight: bold;
     font-size: 16px;
-    margin:10px 0 16px 0;
+    margin:32px 0 16px 0;
+    color: #333333;
 }
 
 .content-body h3 {
-    /*font-weight: bold;*/
     font-style: italic;
-    color: #000000;
+    color: #333333;
 }
 
 .content-body p {
-
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .full-width-content {
