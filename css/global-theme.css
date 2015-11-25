@@ -311,6 +311,19 @@ p {
     margin: 8px;
 }
 
+.content .slider {
+    background-color: lightgray;
+    box-shadow: 7px 10px 10px #737373;
+    text-align: center;
+    margin: 0 auto 0.55em;
+    margin-bottom: 35px;
+    /*padding: 10px 0 10px 0;*/
+}
+
+.content .slider img {
+    width: 450px;
+}
+
 .content figure {
     box-shadow: 7px 10px 10px #737373;
     background-color:#262626;
