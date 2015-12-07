@@ -6,6 +6,9 @@
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/global-theme.css" rel="stylesheet">
         <link href="css/hover.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/lightslider.js"></script>
+        <link rel="stylesheet" href="css/lightslider.css">
     </head>
     <body>
         <div class="container">
@@ -36,14 +39,23 @@
             </header>
             <div class="content-body">
                 <aside class="sidebar">
-                    <div class="center">
-                        <p>
-                            <a href="http://github.com/gojoe262" class="btn">Github</a>
-                        </p>
-                        <p>
-                            <a href="#" class="btn">LinkedIn</a>
-                        </p>
+                    <div class="slider">
+                        <ul>
+                            <li>
+                                <a href="http://github.com/gojoe262" class="btn"><img src="img/github-icon.png" alt="Github" class="small"/><br/>Github</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn"><img src="img/linkedin-icon.png" alt="LinkedIn" class="small"/><br/>LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="btn"><img src="img/phone-icon.png" alt="Contact" class="small"/><br/>Contact Info</a>
+                            </li>
+                            <li>
+                                <a href="projects.html" class="btn"><img src="img/code-icon.png" alt="Projects" class="small"/><br/>My Projects</a>
+                            </li>
+                        </ul>
                     </div>
+
                 </aside>
                 <section class="content">
                     <h1>Hi there!</h1>
@@ -83,5 +95,17 @@
             <footer>
             </footer>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".slider > ul").lightSlider({
+                    item: 1,
+                    speed: 800, //ms'
+                    auto: true,
+                    loop: true,
+                    slideEndAnimation: true,
+                    pause: 5000
+                });
+            });
+        </script>
     </body>
 </html>

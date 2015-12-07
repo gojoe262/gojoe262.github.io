@@ -48,7 +48,7 @@ p {
     -webkit-border-radius: 20px 0px 20px 0px;
     color: #ffffff;
     font-size: 27px;
-    background: #bd5f39;
+    background: #42baa2; /* #bd5f39;*/
     padding: 10px 20px 8px 20px;
     text-decoration: none;
     margin-bottom: 20px;
@@ -64,9 +64,8 @@ p {
 }
 
 .btn:hover {
-    background: #c07353;
+    background: #48cbb1;
     text-decoration: none;
-
 }
 
 /******* HEADER *******/
@@ -352,6 +351,7 @@ p {
     margin: 0 auto 0.55em;
     margin-bottom: 35px;
     width: 500px;
+    color: lightgrey;
 }
 
 .content .slider img {
@@ -367,6 +367,32 @@ p {
     margin: 8px;
     margin-top: 75px;
 }
+
+.sidebar .slider {
+    background-color: #262626;
+    box-shadow: 7px 10px 10px #737373;
+    text-align: center;
+    margin: 0 auto 0.55em;
+    margin-bottom: 35px;
+    width: 300px;
+    color: lightgrey;
+    padding-top: 15px;
+}
+
+.sidebar .slider .btn {
+    height:80px;
+    width:180px;
+}
+
+.sidebar .slider img {
+    width: 250px;
+}
+
+.sidebar .slider img.small {
+    width: 50px;
+}
+
+
 
 /******* FOOTER *******/
 footer {
