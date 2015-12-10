@@ -336,14 +336,14 @@ p {
     margin-bottom: 0;
 }
 
-.content img {
+.content > img {
     display: block;
     margin: 24px auto;
     box-shadow: 7px 10px 10px #737373;
     /*border: 10px solid #000000;*/
 }
 
-.content img.thumbnail {
+.content > img.thumbnail {
     /*display: block;*/
     /*margin: auto auto;*/
     display: inline;
@@ -355,15 +355,15 @@ p {
     /*margin: auto auto;*/
 }
 
-.content img.small {
+.content > img.small {
     width: 150px;
 }
 
-.content img.medium {
+.content > img.medium {
     width: 300px;
 }
 
-.content img.large {
+.content > img.large {
     width: 500px;
 }
 
@@ -378,6 +378,21 @@ p {
 
 .content .slider .slider-item {
     padding: 16px 32px 0 32px;
+}
+
+.content .slider .slider-item .slider-image{
+	float: left;
+}
+
+.content .slider .slider-item .slider-image img{
+	width: 200px;
+	margin: 0 30px 0 15px;
+	box-shadow: 7px 10px 10px #737373;
+}
+
+.content .slider .slider-item .slider-text {
+	width: 220px;
+	float: left;
 }
 
 .content .slider .slider-item a:last-child{
