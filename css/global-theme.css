@@ -348,7 +348,7 @@ p {
     /*border: 10px solid #000000;*/
 }
 
-.content > img.thumbnail {
+.content img.thumbnail {
     /*display: block;*/
     /*margin: auto auto;*/
     display: inline;
