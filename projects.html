@@ -9,8 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="js/lightslider.js"></script>
         <link rel="stylesheet" href="css/lightslider.css">
-        <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="js/slimbox2.js"></script>
+        <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
     </head>
     <body>
         <div class="container">
@@ -26,7 +25,11 @@
                     <nav>
                         <ul>
                             <li><a href='index.html'>Home</a></li>
-                            <li><a href="about-me.html">About Me</a></li>
+                            <li class=''><a href='about-me.html'>About Me</a>
+                                <ul>
+                                    <li><a href="blog.html">Blog</a></li>
+                                </ul>
+                            </li>
                             <li class='active'><a href='projects.html'>Projects</a>
                                 <ul>
                                     <li><a href="#loose-change">Loose Change</a></li>
@@ -41,23 +44,27 @@
             </header>
             <div class="content-body">
                 <section class="sidebar">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo deserunt rerum distinctio, dolorum dicta saepe, repellendus id officia blanditiis tempora, eaque quasi impedit, aliquam sed? Distinctio vero modi odit rerum!</p>
+                    <div class="item">
+                        <p>
+                            In addition to professional work, I also enjoy teaching myself new technologies and working on my own projects.
+                        </p>
+                    </div>
                 </section>
                 <section class="content">
                     <div class="item">
                         <h2 id="loose-change">Loose Change</h2>
                         <p>This is a web app I’m currently developing. It keeps track of income and expenses. Front-end is using HTML, JavaScript, and CSS. Data storage is using Google Drive API. <a href="https://github.com/gojoe262/LooseChange">github.com/gojoe262/LooseChange</a></p>
                         <div class="center">
-                            <a href="img/loose-change-mockup.png" rel="lightbox-loosechange" title="Mockup during the design/planning phase.">
+                            <a href="img/loose-change-mockup.png" data-lightbox="lightbox-loosechange" data-title="Mockup during the design/planning phase.">
                                 <img src="img/loose-change-mockup.png" alt="Loose Change Image" class="thumbnail"/>
                             </a>
-                            <a href="img/loose-change.png" rel="lightbox-loosechange" title="Responsive data table.">
+                            <a href="img/loose-change.png" data-lightbox="lightbox-loosechange" data-title="Responsive data table.">
                                 <img src="img/loose-change.png" alt="Loose Change Image" class="thumbnail"/>
                             </a>
-                            <a href="img/loose-change-responsive.png" rel="lightbox-loosechange" title="Columns hide as screen size gets smaller. Suitible for tablets and phones.">
+                            <a href="img/loose-change-responsive.png" data-lightbox="lightbox-loosechange" data-title="Columns hide as screen size gets smaller. Suitible for tablets and phones.">
                                 <img src="img/loose-change-responsive.png" alt="Loose Change Image" class="thumbnail"/>
                             </a>
-                            <a href="img/loose-change-add-dialog.png" rel="lightbox-loosechange">
+                            <a href="img/loose-change-add-dialog.png" data-lightbox="lightbox-loosechange">
                                 <img src="img/loose-change-add-dialog.png" alt="Loose Change Image" class="thumbnail"/>
                             </a>
                         </div>
@@ -66,7 +73,7 @@
                         <h2 id="duar">DUAR (Desktop Up And Running)</h2>
                         <p>Build a customized Linux distribution. Once Ubuntu Mini (command-line-only operating system) has been installed, run these scripts to get a fully functional desktop up and running. The installtion script will automatically set up a GUI and install commonly used applications. <a href="https://github.com/gojoe262/DUAR_Installation">github.com/gojoe262/DUAR_Installation</a></p>
                         <div class="center">
-                            <a href="img/duar-installation.png" rel="lightbox-duar">
+                            <a href="img/duar-installation.png" data-lightbox="lightbox-duar">
                                 <img src="img/duar-installation.png" alt="DUAR Installation Screenshot" class="thumbnail"/>
                             </a>
                         </div>
@@ -83,5 +90,6 @@
                 });
             });
         </script>
+        <script type="text/javascript" src="js/lightbox.js"></script>
     </body>
 </html>
