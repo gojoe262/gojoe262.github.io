@@ -1,10 +1,8 @@
 /***** FONTS *****/
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
-/*@import url(https://fonts.googleapis.com/css?family=Audiowide);*/
 
 /***** COMMON *****/
-
 body {
     background-color: rgb(241, 243, 255);
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
@@ -402,17 +400,7 @@ p {
     padding-top: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*Content*/
+/* 2/3 width content*/
 .content {
     /* Can be used with sidebar */
     width: 570px;
@@ -508,7 +496,6 @@ p {
 .content .slider .slider-item .slider-image img:hover{
 opacity: 0.7;
 }
-
 
 .content .slider .slider-item .slider-text {
 	width: 220px;
