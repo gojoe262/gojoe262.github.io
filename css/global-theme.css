@@ -100,7 +100,7 @@ p {
 
 .header .header-pic {
     position: absolute;
-    right: 30px;
+    right: 40px;
     float: right;
     top: 30px;
 }
@@ -130,7 +130,7 @@ p {
 }
 
 .header .header-pic img {
-    width: 300px;
+    width: 200px;
 }
 
 .header .header-nav {
@@ -307,11 +307,112 @@ p {
     line-height: 24px;
 }
 
+/*Full width content*/
 .full-width-content {
     float: left;
-    width: 960px;
+    width: 920px;
+    padding: 20px 20px 20px 20px;
 }
 
+.full-width-content .btn {
+    height:30px;
+    width:300px;
+}
+
+.full-width-content .btn:last-child{
+    margin-bottom:0;
+}
+
+.full-width-content .btn img {
+    width:30px;
+    float:left;
+}
+
+.full-width-content > .item {
+    box-shadow: 2px 2px 7px #737373;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.full-width-content > .item:not(:first-child) {
+    margin-top: 30px;
+}
+
+.full-width-content > .item h2:first-child{
+    margin: 0 0 16px 0;
+}
+
+.full-width-content > .item p:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.full-width-content > .item p:last-child{
+    margin-bottom: 0;
+}
+
+.full-width-content .slider {
+    background-color: #ffffff;
+}
+
+.full-width-content .slider.item {
+    padding: 20px 0 20px 0;
+}
+
+.full-width-content .slider .slider-item {
+    padding: 16px 32px 0 32px;
+}
+
+.full-width-content .slider .slider-item .slider-image{
+	float: left;
+    display: inline-block;
+    padding: 0;
+}
+
+.full-width-content .slider .slider-item .slider-image img{
+	width: 300px;
+	margin: 0 30px 0 30px;
+
+    display: block;
+
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+	/*box-shadow: 7px 10px 10px #737373;*/
+}
+.full-width-content .slider .slider-item .slider-image img:hover{
+    opacity: 0.7;
+}
+
+
+.full-width-content .slider .slider-item .slider-text {
+	width: 470px;
+	float: left;
+}
+
+.full-width-content .slider .slider-item .slider-btn {
+	width: 470px;
+    position: absolute;
+    bottom: 70px;
+	float: left;
+}
+
+.full-width-content .slider .slider-item a:last-child{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Content*/
 .content {
     /* Can be used with sidebar */
     width: 570px;
@@ -422,13 +523,17 @@ opacity: 0.7;
     width: 330px;
     float: right;
     padding: 20px 20px 20px 0;
-    margin: 75px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .sidebar .item {
     box-shadow: 2px 2px 7px #737373;
     background-color: #ffffff;
     padding: 20px;
+}
+
+.sidebar .item:not(:first-child) {
+    margin-top: 30px;
 }
 
 .sidebar .item p:last-child{
@@ -464,8 +569,6 @@ opacity: 0.7;
     padding-top: 15px;
 }
 
-
-
 .sidebar .slider img {
     width: 250px;
 }
@@ -474,14 +577,12 @@ opacity: 0.7;
     width: 50px;
 }
 
-
-
 /******* FOOTER *******/
 footer {
-    height: 50px;
     clear: both;
     background-color: lightgrey;
     padding: 15px;
+    color: grey;
 }
 
 /******* BOXES *******/
