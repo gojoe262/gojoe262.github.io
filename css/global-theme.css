@@ -1,20 +1,22 @@
 /***** FONTS *****/
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 /***** COMMON *****/
 body {
-    background-color: rgb(228, 230, 245);
+    background-color: #e4e6f5;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 30px;
+    color: #333333;
 }
 
 .container {
-    width: 760px;
+    width: 800px;
     margin: auto;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 850px) {
     .container { width: 95%;  }
 }
 
@@ -29,15 +31,20 @@ a:hover{
 
 h1 {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 60px;
+    color: #000000;
 }
 
 h2 {
     font-size: 30px;
+    line-height: 50px;
+    color: #000000;
 }
 
 h3 {
     font-size: 20px;
+    line-height: 40px;
+    color: #000000;
 }
 
 p {
@@ -52,17 +59,49 @@ p {
     text-align: center;
 }
 
-/**Navigation**/
+/***** NAVIGATION *****/
 .nav {
     text-align: center;
-    padding: 5px 0 0 0;
+    margin-top: 15px;
 }
 
+/***** TITLE *****/
 .title {
     text-align: center;
-    margin-top: 40px;
+    padding-top: 30px;
 }
 
-.title .date {
+.title #post-date {
     color: grey;
+}
+
+/**** FOOTER ****/
+.footer {
+    text-align: center;
+    padding: 30px 0;
+}
+
+/***** IMAGES *****/
+img {
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 650px;
+}
+
+@media (max-width: 850px) {
+    img { width: 75%; }
+}
+
+/**** CODE BLOCKS ****/
+.prettyprint {
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 650px;
+    font-family: 'Ubuntu Mono';
+    font-size:20px;
+    line-height: 25px;
+}
+
+@media (max-width: 850px) {
+    .prettyprint { width: 75%; }
 }
