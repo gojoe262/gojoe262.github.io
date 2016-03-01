@@ -65,6 +65,20 @@ p {
     margin-top: 15px;
 }
 
+/**** INDEX LIST ****/
+.index-list  {
+    width: 600px;
+    margin: auto;
+}
+
+@media (max-width: 850px) {
+    .index-list { width: 60%;  }
+}
+
+.index-list li {
+    padding-bottom: 15px;
+}
+
 /***** TITLE *****/
 .title {
     text-align: center;
@@ -83,6 +97,7 @@ p {
 
 /***** IMAGES *****/
 img {
+    display: block;
     margin: 30px auto;
     border: 2px solid black;
     width: 650px;
@@ -94,6 +109,7 @@ img {
 
 /**** CODE BLOCKS ****/
 .prettyprint {
+    overflow-x:scroll;
     margin: 30px auto;
     border: 2px solid black;
     width: 650px;
