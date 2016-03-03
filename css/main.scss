@@ -1,0 +1,162 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/***** FONTS *****/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+
+// Our variables
+$base-font-family: 'Raleway', Helvetica, Arial, sans-serif;
+$base-font-size:   20px;
+$base-line-height: 30px;
+
+$spacing-unit:     30px;
+
+$text-color:       #333333;
+$background-color: #e4e6f5;
+$brand-color:      #3ba791;
+
+// Width of the content area
+$container-width:      800px;
+$container-breakpoint: 850px;
+
+
+
+
+/***** COMMON *****/
+body {
+    background-color: $background-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+}
+
+.container {
+    width: $container-width;
+    margin: auto;
+}
+
+@media (max-width: $container-breakpoint) {
+    .container { width: 95%;  }
+}
+
+a {
+    text-decoration: none;
+    color: $brand-color;
+}
+
+a:hover{
+    color: lighten($brand-color, 15%);
+}
+
+a:visited {
+    color: darken($brand-color, 15%);
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.collapsed {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+/***** NAVIGATION *****/
+.nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/**** INDEX LIST ****/
+.index-list  {
+    width: 600px;
+    margin: auto;
+}
+
+@media (max-width: $container-breakpoint) {
+    .index-list { width: 60%;  }
+}
+
+.index-list li {
+    padding-bottom: 15px;
+}
+
+/***** POST *****/
+.post-title {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.post-data{
+    color: #808080;
+    text-align:center;
+}
+
+.post-content {
+    padding-top: 50px;
+}
+
+/**** FOOTER ****/
+.footer {
+    text-align: center;
+    padding: 30px 0;
+}
+
+/***** IMAGES *****/
+img {
+    display: block;
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 650px;
+}
+
+@media (max-width: $container-breakpoint) {
+    img { width: 75%; }
+}
+
+/**** CODE BLOCKS ****/
+.prettyprint {
+    overflow-x:scroll;
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 650px;
+    font-family: 'Ubuntu Mono';
+    font-size:20px;
+    line-height: 25px;
+}
+
+@media (max-width: $container-breakpoint) {
+    .prettyprint { width: 75%; }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "syntax-highlighting";
