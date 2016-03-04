@@ -1,0 +1,85 @@
+/***** FONTS *****/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+/***** COMMON *****/
+body {
+    background-color: $background-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+}
+
+.container {
+    width: $container-width;
+    margin: auto;
+}
+
+@media (max-width: $container-breakpoint) {
+    .container { width: 95%;  }
+}
+
+a {
+    text-decoration: none;
+    color: $brand-color;
+}
+
+a:hover{
+    color: lighten($brand-color, 15%);
+}
+
+// a:visited {
+//     color: darken($brand-color, 15%);
+// }
+
+h1 {
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.collapsed {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+/***** IMAGES *****/
+img {
+    display: block;
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 650px;
+}
+
+/***** HIGHLIGHT *****/
+.highlight {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    overflow: auto;
+    padding: 10px;
+}
