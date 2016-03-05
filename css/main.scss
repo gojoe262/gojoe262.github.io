@@ -2,19 +2,19 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 // Our variables
-$base-font-family: 'Raleway', Helvetica, Arial, sans-serif;
-$base-font-size:   20px;
-$base-line-height: 30px;
+$base-font-family: Verdana, Arial, open-sans, sans-serif;
+$base-font-size:   16px;
+$base-line-height: 24px;
 
 $spacing-unit:     30px;
 
-$text-color:       #333333;
+$text-color:       #262626;
 $background-color: #e4e6f5;
 $brand-color:      #3ba791;
 
 // Width of the content area
-$container-width:      800px;
-$container-breakpoint: 850px;
+$container-width:     750px;
+$container-breakpoint: 800px;
 
 $skinny-index-list-witdh:    500px;
 $skinny-index-list-witdh-breakpoint:    550px;
