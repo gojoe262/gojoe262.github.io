@@ -1,0 +1,16 @@
+/*** FOOTER ***/
+footer {
+    background: $header-background-color;
+    color: $header-text-color;
+    margin-top: $spacing-unit * 2;
+    padding-top: $spacing-unit;
+    padding-bottom: 16px;
+    font-size: $font-size * 1.15;
+    text-align: center;
+    -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+footer a {
+    color: lighten($link-color, 20%);
+}

@@ -1,0 +1,17 @@
+/***** IMAGES *****/
+img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 95%;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-top: $spacing-unit * 1.5;
+
+    .image-caption {
+        color: lighten($font-color, 10%);
+        margin-top: $spacing-unit * .05;
+    }
+}

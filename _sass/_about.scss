@@ -1,0 +1,21 @@
+/**** ABOUT ****/
+.about-card {
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+.about-card h1
+{
+    font-size: $font-size * 1.25;
+    line-height: $font-size * 1.5;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.about-card h2
+{
+    font-size: $font-size * 1.1;
+    line-height: $font-size * 1.1;
+    margin-top: 0;
+    margin-bottom: 5px;
+}

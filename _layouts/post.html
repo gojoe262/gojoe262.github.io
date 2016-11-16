@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="post-title">
+    <h1>{{ page.title }}</h1>
+</div>
+
+<div class="post-data">
+    <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+    {% if page.author %} •
+        <span>{{ page.author }}</span>
+    {% endif %}
+</div>
+
+{% if page.image %}
+<div class="post-image">
+    <img src=" {{ site.baseurl }}/img/{{ page.image }}" alt="" />
+</div>
+{% endif %}
+
+<div class="post-content">
+    {{ content }}
+</div>
+
+<div class="post-related">
+{% assign anyRelatedFound = false %}
+{% for _post in site.posts %}
+    {% assign relatedFoundPerTag = false %}
+    {% for _tag in _post.tags %}
+        {% if relatedFoundPerTag == false %}
+            {% if page.tags contains _tag and page.url != _post.url %}
+                {% if anyRelatedFound == false %} <!-- first related post, if any exists-->
+                    <hr>
+                    <h3>Related</h3>
+                {% endif %}
+                <div class="indent">
+                    <span title="Related: {{ _tag | remove: ","}}">
+                        <a href="{{ _post.url | prepend: site.baseurl }}">
+                            {{ _post.title }}
+                        </a>
+                        <span class="post-related-data">
+                            {{ _post.date | date: "%Y-%m-%d" }}
+                            {% if _post.author %} •
+                                {{ _post.author }}
+                            {% endif %}
+                        </span>
+                    </span>
+                </div>
+                {% assign relatedFoundPerTag = true %}
+                {% assign anyRelatedFound = true %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</div>
+
+{% if page.comments %}
+<div class="post-comments">
+    <hr>
+    {% include comments.html %}
+</div>
+{% endif %}

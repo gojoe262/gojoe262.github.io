@@ -1,0 +1,39 @@
+TODO
+-------------------------------------
+- Create a simple logo or profile pic
+- Create favicon
+- Add profile pic to about page
+- Create a "most popular" section for blog posts on the home page
+- Make lightbox or direct link when clicking images
+- Redo header nav
+	- Underline active page
+- Move location from joe-schueller.github.io/blog/ to joe-schueller.github.io/
+    - Done on local repository
+    - Still needs to be done on the github website
+
+
+DOING
+-------------------------------------
+
+
+
+DONE
+-------------------------------------
+- Fix page title (the title that shows up on the tab in the browser)
+- Fix header. More padding is needed on the left when in wide screen view. Header text should align with main content text
+- Redo the responsive design
+	- Migrate to sass $responsive-breakpoint variables
+	- Make sure zoom still works on phone
+	- remove wrapper div
+	- Increase/decrease font size based on breakpoints
+- Rename archive to posts
+- Fix PDF of the Lane Detection Systems paper
+- Create and link up docs folder
+- Move full website over to the cayman-blog-master theme
+- Create a simple home page
+    - Includes a Picture, link to about me, and recent blog posts
+- Create a footer
+    - Contains Link to contact, twitter, linkedin,
+- Write up interest and hobbies
+- Move resume stuff to about me page
+- Create Job Cards for Resume page; Copy LinkedIn Format (Include image as well)

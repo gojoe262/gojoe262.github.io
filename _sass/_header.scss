@@ -1,0 +1,59 @@
+/***HEADER***/
+.page-header {
+    color: $header-text-color;
+    background: $header-background-color;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.header-link  {
+    color: $header-text-color;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header-link:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.project-name {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+/***HEADER LARGE***/
+@media screen and (min-width: $content-width) {
+    .page-header-content {
+        max-width: $content-width;
+        padding: ($spacing-unit) ($spacing-unit) ($spacing-unit * 2) ($spacing-unit);
+        margin: 0 auto;
+    }
+
+    .project-name {
+        font-size: $font-size * 3.5;
+    }
+
+    .page-header-content .nav {
+	    font-size: $font-size * 1.5;
+        margin-top: $spacing-unit * .4;
+    }
+}
+
+@media screen and (max-width: $content-width) {
+    .page-header-content {
+        width: 100%;
+        padding: ($spacing-unit) ($spacing-unit) ($spacing-unit * 2) ($spacing-unit);
+    }
+
+    .project-name {
+        font-size: 2.25rem;
+    }
+
+    .page-header .nav {
+	    font-size: $font-size * 1.5;
+        margin-top: $spacing-unit * .3;
+    }
+}
