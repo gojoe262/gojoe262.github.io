@@ -26,7 +26,7 @@ One way to reduce noise is to use a binarization function to convert the image t
 {% include image.html img="img/binarization-bw.jpg" caption="Binary Image - Black and White. Notice how the lane markings stand out." %}
 
 #### Blurring ####
-Other ways of reducing image noise it to apply a blur to the image, usually done with a Gaussian Blur. Commonly used in image processing and graphic design, it is very effective in removing random “salt and pepper noise” from the image.
+Other ways of reducing image noise is to apply a blur to the image, usually done with a Gaussian Blur. Commonly used in image processing and graphic design, it is very effective in removing random “salt and pepper noise” from the image.
 
 #### Regions of Interest ####
 To increase efficiency, the image may be cut in size to only a portion of the original image. This portion is called a Region of Interest (ROI). A ROI is focused on the road and cuts out the upper part of the image which usually contains only sky. By cutting down the image size, subsequent steps have less image to process, and therefore cut down on the computational complexity in the future steps. ROIs may be shaped in a trapezoid to fit around the view of the road or multiple ROIs may be shaped around the probable edges and lane markings of a road.
