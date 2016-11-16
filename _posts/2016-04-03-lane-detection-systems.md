@@ -8,7 +8,7 @@ author: Joe Schueller
 comments: true
 disqus_id: 2016-04-03_Lane_Detection_Systems
 ---
-*Article based on a paper I wrote. [Full paper (pdf)]({{site.baseurl}}/docs/SchuellerJo_An_Analysis_Of_On_Road_Lane_Detection_Systems.pdf)*
+*Article based on paper I wrote for class at UW-Platteville. [Full paper (pdf)]({{site.baseurl}}/docs/SchuellerJo_An_Analysis_Of_On_Road_Lane_Detection_Systems.pdf)*
 <br><br>
 
 Detecting lane markings is a simple task for a human being, but for a computer this is a complex task. A human instantly spots patterns while a computer interprets the road as a set of pixels. Lane detection systems can be active or passive. Active systems use sensors, such as lasers and sonar, to gather and map the data of the surrounding area. These types of sensors are accurate and fast, but are prone to interference. Also, equipment for active systems are more expensive than equipment for passive systems. For these reasons, research in passive systems has been a growing topic. Passive systems do not introduce any interference to the surrounding area and only use visual data as input. Most passive systems rely on dash-mounted cameras to retrieve data. Passive systems have the benefit of being reasonably priced and readily available. Also, video frames contain a wealth of information that can be useful in lane detection systems. For this article, we will focus on passive systems.
