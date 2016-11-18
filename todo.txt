@@ -1,15 +1,12 @@
 TODO
 -------------------------------------
+- Make lightbox or direct link when clicking images
 - Create a simple logo or profile pic
 - Create favicon
 - Add profile pic to about page
 - Create a "most popular" section for blog posts on the home page
-- Make lightbox or direct link when clicking images
-- Redo header nav
-	- Underline active page
-- Move location from joe-schueller.github.io/blog/ to joe-schueller.github.io/
-    - Done on local repository
-    - Still needs to be done on the github website
+	- Add the post image there as well
+- Underline active page in header nav
 
 
 DOING
@@ -19,6 +16,9 @@ DOING
 
 DONE
 -------------------------------------
+- Move location from joe-schueller.github.io/blog/ to joe-schueller.github.io/
+    - Done on local repository
+    - Still needs to be done on the github website
 - Fix page title (the title that shows up on the tab in the browser)
 - Fix header. More padding is needed on the left when in wide screen view. Header text should align with main content text
 - Redo the responsive design
