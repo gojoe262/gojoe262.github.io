@@ -16,6 +16,7 @@ DOING
 
 DONE
 -------------------------------------
+- Move Page title spacing from the page title to the header section. 
 - Move location from joe-schueller.github.io/blog/ to joe-schueller.github.io/
     - Done on local repository
     - Still needs to be done on the github website
