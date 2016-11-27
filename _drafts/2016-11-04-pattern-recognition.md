@@ -26,7 +26,7 @@ There is no way around it. If humans are good at spotting patterns, we are bound
 
 False patterns creep up in situations where there is a lot of randomness. For example, a random blob of ink could look like a face, or a cloud could kinda look like a boat.  Our minds are constantly trying to make sense of the world through patterns, whether or not there is any true meaning.
 
-# How we deal with it? #
+# How do we deal with it? #
 
 Most of the time, we are pretty smart in determining if these patterns we see are actually true. After a bit of investigation, we may conclude that something just happened by chance, or it was a great coincidence. However, there is still a possiblility of letting a false pattern slip by our reasoning and logic.
 
