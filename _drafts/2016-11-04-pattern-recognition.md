@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "Pattern Recognition: A Double-Edged Sword"
 date: 2016-11-04
 tags: pattern recognition, AI,
 image: ???
@@ -8,69 +8,60 @@ author: Joe Schueller
 comments: false
 disqus_id: 2016-11-04-pattern-recognition
 ---
-http://59ways.blogspot.com/2012/01/apophenia-and-pareidolia_09.html
-Look thru this to pick any ideas
 
-
-### Why is pattern recognition so great?
+# Why is pattern recognition so great? #
 
 Just think about it for a second. Long ago, cavemen recognized the patterns of the seasons. This helped humans prepare for changes (..and not die ). In more recent history, scientists and inventors spotted patterns. We got discoveries and cool stuff. Sounds pretty sweet, right? Not so fast there..
 
-### So why does pattern recognition suck?
+# Why does pattern recognition suck? #
 
-Even though humans are really good at recognizing patterns, sometime we fall into a trap of spotting patterns that aren't actually there. The stars in the night sky become gods and goddesses. The pattern I think I see in stock market means I'm gonna lose my retirement account. The burn marks in my morning toast looks like a face (Hey! That one is pretty sweet!)
+Even though humans are really good at recognizing patterns, sometime we fall into a trap of spotting patterns that aren't actually there. The stars in the night sky became gods and goddesses. The pattern I thought I saw in stock market results in losing my retirement account. The burn marks in my morning toast looked like a face (Hey! That one is pretty sweet!)
 
 PICTURE HERE
 
 There is no way around it. If humans are good at spotting patterns, we are bound to pick up some false patterns as well. Our tendency to pick up false patterns actually has a name: [Apophenia](https://en.wikipedia.org/wiki/Apophenia).
 
 
-### Where do we find false patterns?
+# Where do we find false patterns? #
 
-False patterns creep up in situations where there is a lot of randomness and noise. For example, a random blob of ink looks like a face, or a cloud kinda looks like a boat.  Our minds are constantly trying to make sense of the world around us whether or not the stimuli has any meaning.
+False patterns creep up in situations where there is a lot of randomness. For example, a random blob of ink could look like a face, or a cloud could kinda look like a boat.  Our minds are constantly trying to make sense of the world through patterns, whether or not there is any true meaning.
 
-(And our brains aren't limited to shapes.. TALK ABOUT TIME PATTERNS).
+# How we deal with it? #
 
-### How we deal with it?
+Most of the time, we are pretty smart in determining if these patterns we see are actually true. After a bit of investigation, we may conclude that something just happened by chance, or it was a great coincidence. However, there is still a possiblility of letting a false pattern slip by our reasoning and logic.
 
-- How we deal with it
-	- Demming
-		- Manufacturing quality control
-		- False positives
-		- Using statisitcal analysis to filter out noisy data.
-		- Process improvements where it matters
+There is a certain level of risk that comes with false pattern recognition. False positives and false negatives in the medical setting carries a high amount of risk. Accounting for the risk involved can get complicated. It might involve attaching a percentage which represents the probablility of error. It could also involve developing a margin of error for the results. 
 
-How do we deal with false pattern recognition?
-/*
-In statistics, a false positive could be the result of false pattern recognition. Even though (good) stataticitans try to lessen the chances of false positives, they are almost an inevitable and must be dealt with. They might attach some percentage that represents the probability of error. In medical settings, they might repeat the test to verify the results. /
+But these techniques still do not find and fix the root cause of false pattern recognition. 
 
-There is a certain level of risk that comes with false pattern recognition. Incorrectly detecting a face to tag on facebook is a low risk activity. However, false positives or false negatives in the medical setting carries a high amount of risk. Accounting for the risk involved can get complicated. It might involve attaching a percentage which represents the probablility of error. It also could involve developing a margin of error for the results. But these techniques still do not find and fix the root cause of false pattern recognition.
-
-Edward Deming applied statistics to manfacturing and quality control. His work helped manufacturers separate actual issues from random variance in quality. Measurments within a certain level of tolerance is okay. There is no need to fire anyone if the random variance lands within the tolerance. But if the measurments are outside the tolerance, there may be a larger issue at hand. We will have to re-evaluate our process to find the root cause.
-(PDCA of the deming cycle; this is the "check, act" part of it.)
+**There isn't much flow into this paragraph about Deming
+Edward Deming applied statistics to manfacturing and quality control. His work helped manufacturers separate actual issues from random variance in quality. Measurments within a certain level of tolerance is okay. Any variance here is just random noise. However if the measurments are outside the tolerance, there may be a larger issue at hand. Deming suggests many different methods to find the root issue.
 
 
-https://www.psychologytoday.com/blog/reality-play/201207/being-amused-apophenia
-"I am making what statisticians would call, a Type I error, also called a false positive."
+--HARD BREAK--
 
-**Breifly talk about demming here**
+# Pattern Recognition in Computers #
 
+Computers are getting (creepingly) good at detecting patterns, specifically faces. When uploading pictures to facebook, you're asked to tag certain people detected in the picture. Snapchat can swap your face out with someone else. But just like humans, computers can fall prey to false pattern recognition. "Yes, that person in the background of my cover photo does look a bit like my dad, but it's not him..stupid facebook."
 
+### Why do computers recognize false patterns? ###
 
-- Computers and AI
-	- Facial recognition,
-	- Facebook tagging example
-	- Problems
-		- Just like humans, computers can also detect false patterns
-		- Limited context
-			- Extra problem: computers at scale, false pattern recognition at scale
+Reason 1.
+Computers recognize false patterns because humans are the one's programming computers. Humans can make mistakes which can be programmed into the computer. This isn't really the computer's fault, so just ignore this one for now.
 
-Pattern Recognition in Computers
+Reason 2. 
+Computers also recognize false patterns because they really suck at knowing the context of a situation. A pattern might yeild good results in 95% of the situations but fail in 5% of situations. For example, a computer could find the faces of people pretty easily, but it would have trouble figuring out if a face is actually a picture of face (or a picture of a picture of a face).
 
-Computers are getting (creepingly) good at detecting faces. When uploading pictures to facebook, you're asked if you want to tag this person. Snapchat can swap your face out with someone else. But just like humans, computers can fall prey to false pattern recognition. "Yes, that person in the background of my cover photo does look a bit like my dad, but it's not him..stupid facebook."
+**GOSLING IMAGE HERE**
 
-Although this example seems pretty harmless, in other domains, false pattern recgonition in computers can have disastrous results. Just take a look at....(**SOME FINANCIAL STORY ABOUT BILLION DOLLAR LOSSES HERE, TESLA CAR CRASH, ETC**)
+### Why is it Dangerous? ### DIFFERENT TITLE NEEDED
 
+Even though computers suck at learning context, they are friggen amazing repetition and speed. Computers have no trouble repeating the same mistake hundreds, thousands, or millions of times. They just follow the algorithms that were programmed. 
+
+The combination of limited context and speed can lead to things like the Flash Crash of 2010. In the Flash Crash, the stock market dropped rapidly with no apparent reason. Computers systems that recognized the sharp decline decided to sell which only accelerated the drop. Within a matter of minutes, the stock market had dropped 9%. The trillion dollar crash, which recovered soon afterwards, prompted investigations to determine the role of automated systems in the stock market. Situations like this show the speed and scale of computer systems.
+
+### Outro ###
+False patterns that humans just "obviously know" are false pose a great danger when creating computer pattern recognition systems. As technology and research advances, we will have to be mindful of the speed and scale at which computers operate. We will become less focused on creating 100% correct systems, and instead, create systems that recognize their own limits. 
 
 
 
@@ -81,73 +72,3 @@ Although this example seems pretty harmless, in other domains, false pattern rec
 How will we deal with false pattern recognition in computers?
 (SOMETHING ABOUT CROSS VALIDATION, MORE RESEARCH, ...JUST KNOWING THE LIMITS OF COMPUTERS)
 
-
-
-# Intro 1#
-?? IS THIS TOO MUCH OF A STORY. Might be a good thing so readers remember; this is a good hook??
-Imagine yourself living in prehistoric times. By day, you hunt and gather, and by night, you huddle around the fire looking up at the stars sky.
-
-Now you being a smart caveman, you think, "I should start mapping the stars in the sky." This endevour takes many, many days to do. Your clan is wondering why the heck you are using up all the cave writing space just to make a map of the stars.
-
-
-## Intro 2 ##
-Pattern recognition is a fundamental trait of intelligent being (THIS SENTENCE IS TOO POMPUS).
-Why pattern recognition is the greatest human ability.
-
-Just take a look at all the discoveries and inventions. Many of them can all be traced back to spotting a pattern. Round things roll -> wheel. All things fall -> gravity. Stars in the night sky -> calendar, navigation. (put some obsurdly complicated example here for humor) Something about facial recognition
-
-Even though humans are really good at recognizing pattern, sometime we fall into a trap of spotting patterns that aren't actually there. (give some exapmles) Stars in the night sky -> constellations, gods and goddesses, i see something in a stock market pattern -> i'm gonna lose my retirement account, wear this shirt for 2 years -> packers win superbowl, my piece of toast looks like a face
-
-(SET UP THE IDEA OF ABSTRACT AND TRANSFERRABLE CONCEPTS)
-
-Why do we falling prey to false pattern recognition?
-
-Our brains are constantly trying to spot patterns. However the incoming stimuli/data into our minds is very messy and almost random.
-
-(Bring up stars at this point. )Even our calendar is a product of our pattern recognition. Seasons seem to repeat every 365 days,
-
-
-## Intro 3 ##
-Yes, I'm going to argue why pattern recognition is the best human ability. Just think about it for a second. Recognizing patterns of the night sky helped early civilizations plan for different seasons. It helped captains navigate the dark open waters.
-
-
-
-(HOWEVER...talk about false pattern recognition. Constelations, stock market, gambling, etc)
-
-
-
-
-
-
---------------------TRELLO NOTES-------
-
-#
-
-
-Catchy (click baity) title. Catch attention and make the reader initially ask a question to themselves. "What is the best trait?"... Click.
-**Human 's Best... And Worst Trait**
-
-**History/Hook**
-History of pattern recognition. Set up an easy to remember story or hook which readers can easily repeat and confirm in their minds. If they can deduce it in their minds, they will better believe it.
-
-Good. Watching stars in the sky to track the seasons. Initial astronomy. 365 day/yr.
-Bad. Constellations must be sent from the gods. The look like images.
-
-
-Current example, chart reading, Stock markets, Gambling, etc.
-
-**Statement of problem**
-Problems. We are good at pattern recognition, but can fall prey to false pattern recognition.
-Give some examples. Noisy data.
-
-**Where computers come in**
-Where computers can help... or hurt.
-One of the first thing did with AI is pattern recognition (facial detection, lane detection, etc).
-
-**Refer back to the problem statement**
-Trap of false patterns which the computer presents as true.. so we take it as truth.
-Trap.. Limited context. The computer can't tell the difference from a face and a picture of a face.
-Trap... Computers create patterns of their own. (Constant retreating in Chess match indicates a computer. Human too stubborn to retreat constantly. Heard this on NPR)
-
-**Ongoing efforts to reduce false pattern recognition**
-Efforts to help separate noise from actual patterns. Demming. Industrial engineering. Originated in the manufacturing realm. Has spread in to software project management.
