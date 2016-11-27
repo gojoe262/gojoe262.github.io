@@ -42,21 +42,21 @@ Now we've already covered pattern recongnition in humans, but we have yet to dis
 ### Why do computers recognize false patterns? ###
 
 Reason 1.
-Computers recognize false patterns because humans are the one's programming computers. Humans can make mistakes which can be programmed into the computer. This isn't really the computer's fault, so just ignore this one for now.
+Computers recognize false patterns because humans are the one's programming computers. Humans can make mistakes which can be programmed into the computer. This isn't really the computer's fault, so we'll just ignore this one.
 
 Reason 2. 
-Computers also recognize false patterns because they really suck at knowing the context of a situation. A pattern might yeild good results in 95% of the situations but fail in 5% of situations. For example, a computer could find the faces of people pretty easily, but it would have trouble figuring out if a face is actually a picture of face (or a picture of a picture of a face).
+Computers also recognize false patterns because they really suck at knowing the context of a situation. A pattern might yeild good results in 95% of the situations but fail in 5% of situations. For example, a computer could find the faces of people pretty easily, but it would have trouble figuring out if a face belongs to an actual person, or just a picture of face (or a picture of a picture of a face).
 
 **GOSLING IMAGE HERE**
 
 ### Why is it Dangerous? ### DIFFERENT TITLE NEEDED
 
-Even though computers suck at learning context, they are amazing repetition and speed. Computers have no trouble repeating the same mistakes hundreds, thousands, or millions of times. They just follow the algorithms that were programmed. 
+Even though computers suck at knowing context, they are amazing at repetition and speed. Computers have no trouble repeating the same mistakes hundreds, thousands, or millions of times. They just follow the algorithms that were programmed. 
 
 The combination of limited context and speed can lead to things like the Flash Crash of 2010. In the Flash Crash, the stock market dropped rapidly with no apparent reason. Computers systems that recognized a sharp decline decided to sell which only accelerated the drop. Within a matter of minutes, the stock market had dropped 9%. The trillion dollar crash, which recovered soon afterwards, prompted investigations to determine the role of automated systems in the stock market. Situations like this show the speed and scale of computer systems.
 
 ### Outro ###
-False patterns that humans just "obviously know" are false pose a great danger when creating computer pattern recognition systems (REWORD THIS SENTENCE). As technology and research advances, we will have to be mindful of the speed and scale at which computers operate. We will become less focused on creating 100% correct systems, and instead create systems that recognize their own limits. 
+False patterns that humans just "obviously know" are false pose a great danger when creating computer pattern recognition systems (REWORD THIS SENTENCE). As technology and research advances, we will have to be mindful of the speed and scale at which computers operate. We will become less focused on creating 100% correct systems, and instead create systems that recognize their own limits and fail gracefully.  
 
 
 
