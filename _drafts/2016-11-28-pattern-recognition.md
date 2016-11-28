@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pattern Recognition: A Double-Edged Sword"
-date: 2016-11-04
+date: 2016-11-28
 tags: pattern recognition, AI,
 image: ???
 author: Joe Schueller
@@ -11,7 +11,7 @@ disqus_id: 2016-11-04-pattern-recognition
 
 # Why is pattern recognition so great? #
 
-Just take a second to think about pattern recognition. Long ago, cavemen recognized the patterns of the seasons. This helped humans prepare for seasonal changes (...and not die ). In recent history, scientists and inventors spotted patterns. We got discoveries and cool stuff. Sounds pretty sweet, right? Not so fast there..
+Just take a second to think about pattern recognition. Long ago, cavemen recognized the patterns of the seasons. This helped humans prepare for seasonal changes (...and not die ). In recent history, scientists and inventors spotted patterns in nature and society. We got discoveries and cool stuff. Sounds pretty sweet, right? Not so fast there..
 
 # Why does pattern recognition suck? #
 
@@ -28,7 +28,7 @@ False patterns creep up in situations where there is a lot of randomness. For ex
 
 # How do we deal with it? #
 
-Most of the time, we are pretty smart in determining if these patterns we see are actually true. After a bit of investigation, we may conclude that something just happened by chance, or it was a great coincidence. However, there is still a possiblility of letting a false pattern slip by our reasoning and logic.
+Most of the time, we are pretty smart in determining if these patterns we see are actually true. After a bit of investigation, we could conclude that something happened just by chance, or it was a great coincidence. However, there is still a lot of room to let a false pattern slip by our reasoning and logic.
 
 There is also a certain level of risk that comes with false pattern recognition. False positives and false negatives in the medical setting carries a high amount of risk. Accounting for the risk involved can get complicated. It might involve attaching a percentage which represents the probablility of error. It could also involve developing a margin of error for the results. 
 
@@ -42,7 +42,7 @@ Now we've already covered pattern recongnition in humans, but we have yet to dis
 ### Why do computers recognize false patterns? ###
 
 Reason 1.
-Computers recognize false patterns because humans are the one's programming computers. Humans can make mistakes which can be programmed into the computer. This isn't really the computer's fault, so we'll just ignore this one.
+Computers recognize false patterns because humans are the one's programming computers. Humans can make mistakes which are programmed into the computer. This isn't really the computer's fault, so we'll just ignore this one.
 
 Reason 2. 
 Computers also recognize false patterns because they really suck at knowing the context of a situation. A pattern might yeild good results in 95% of the situations but fail in 5% of situations. For example, a computer could find the faces of people pretty easily, but it would have trouble figuring out if a face belongs to an actual person, or just a picture of face (or a picture of a picture of a face).
@@ -51,12 +51,12 @@ Computers also recognize false patterns because they really suck at knowing the 
 
 ### Why is it Dangerous? ### DIFFERENT TITLE NEEDED
 
-Even though computers suck at knowing context, they are amazing at repetition and speed. Computers have no trouble repeating the same mistakes hundreds, thousands, or millions of times. They just follow the algorithms that were programmed. 
+Even though computers suck at knowing context, they are amazing at repetition and speed. Computers have no trouble repeating the same mistakes a hundred, a thousand, or a million times. They just follow the algorithms that were programmed. 
 
 The combination of limited context and speed can lead to things like the Flash Crash of 2010. In the Flash Crash, the stock market dropped rapidly with no apparent reason. Computers systems that recognized a sharp decline decided to sell which only accelerated the drop. Within a matter of minutes, the stock market had dropped 9%. The trillion dollar crash, which recovered soon afterwards, prompted investigations to determine the role of automated systems in the stock market. Situations like this show the speed and scale of computer systems.
 
 ### Outro ###
-False patterns that humans just "obviously know" are false pose a great danger when creating computer pattern recognition systems (REWORD THIS SENTENCE). As technology and research advances, we will have to be mindful of the speed and scale at which computers operate. We will become less focused on creating 100% correct systems, and instead create systems that recognize their own limits and fail gracefully.  
+False patterns that humans just "obviously know" are false pose a great danger when creating computer pattern recognition systems (REWORD THIS SENTENCE). As technology and research advances, we will have to be mindful of the speed and scale at which computers operate. We should be less focused on creating 100% correct systems, and instead create systems that recognize their own limits and fail gracefully.  
 
 
 
