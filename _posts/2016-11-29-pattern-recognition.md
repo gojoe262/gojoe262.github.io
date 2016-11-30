@@ -44,7 +44,7 @@ Computers recognize false patterns because humans are the one's programming comp
 **Reason 2.** 
 Computers also recognize false patterns because they really suck at knowing the context of a situation. A pattern might yeild good results in 95% of the situations but fail in 5% of situations. For example, a computer could find the faces of people pretty easily, but it would have trouble figuring out if a face belongs to an actual person, or just a picture of face (or a picture of a picture of a face).
 
-{% include image.html img="img/gosling_culkin.jpg" caption="<a href='http://huffpost.com/us/entry/5322461'>Gosling and Culkin Shirt-ception</a>" %}
+{% include image.html img="img/gosling_culkin.jpg" caption="<a href='http://www.huffingtonpost.com/2014/05/14/ryan-gosling-macaulay-culkin_n_5322461.html'>Gosling and Culkin Shirt-ception</a>" %}
 
 ## So why is this dangerous? ##
 
