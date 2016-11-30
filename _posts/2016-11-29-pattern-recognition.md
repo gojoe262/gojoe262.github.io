@@ -44,13 +44,13 @@ Computers recognize false patterns because humans are the one's programming comp
 **Reason 2.** 
 Computers also recognize false patterns because they really suck at knowing the context of a situation. A pattern might yeild good results in 95% of the situations but fail in 5% of situations. For example, a computer could find the faces of people pretty easily, but it would have trouble figuring out if a face belongs to an actual person, or just a picture of face (or a picture of a picture of a face).
 
-{% include image.html img="img/gosling_culkin.jpg" caption="" %}
+{% include image.html img="img/gosling_culkin.jpg" caption="<a href='huffpost.com/us/entry/5322461'>Shirt-ception</a>" %}
 
 ## So why is this dangerous? ##
 
 Even though computers suck at knowing context, they are amazing at repetition and speed. Computers have no trouble repeating the same mistakes a hundred, a thousand, or a million times. They just follow the algorithms that were programmed. 
 
-The combination of limited context and speed can lead to things like the Flash Crash of 2010. In the Flash Crash, the stock market dropped rapidly with no apparent reason. Computers systems that recognized a sharp decline decided to sell which only accelerated the drop. Within a matter of minutes, the stock market had dropped 9%. The trillion dollar crash, which recovered soon afterwards, prompted investigations to determine the role of automated systems in the stock market. Situations like this show the speed and scale of computer systems.
+The combination of limited context and speed can lead to things like the Flash Crash of 2010. In the Flash Crash, the stock market dropped rapidly with no apparent reason. Computers systems that recognized a sharp decline decided to sell which only accelerated the drop. Within a matter of minutes, the stock market dropped 9%. The trillion dollar crash, which recovered soon afterwards, prompted investigations to determine the role of automated systems in the stock market. Situations like this show the speed and scale of computer systems.
 
 ## In conclusion... ##
-False patterns that humans just "obviously know" are false pose a great danger when creating pattern recognition systems for computers. As technology and research advances, we will have to be mindful of the speed and scale at which computers operate. We should create systems that recognize their own limits and fail gracefully.  
+False patterns that humans just "obviously know are false" pose a great danger when creating pattern recognition systems for computers. As technology and research advances, we will have to be mindful of the speed and scale at which computers operate. We should create systems that recognize their own limits and fail gracefully.  
