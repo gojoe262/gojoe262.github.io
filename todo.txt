@@ -1,5 +1,7 @@
 TODO
 -------------------------------------
+- Make font lighter color
+	- This makes it easier on the eyes. Less contrast
 - Make lightbox or direct link when clicking images
 - Create a simple logo or profile pic
 - Create favicon

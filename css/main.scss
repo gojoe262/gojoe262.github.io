@@ -3,15 +3,18 @@
 ---
 // Our variables
 $header-text-color: white;
-$header-background-color: #56687C;
+$header-background-color: #8d3040;
+$header-background-image: "../img/triangle.png";
 
 $font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-p: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+/*$font-family-p: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;*/
+$font-family-p: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size:   14px;
-$line-height: 1.6;
+$line-height: 1.45;
 
 $link-color: #006daf;
 $font-color: #101010;
+$font-color-p: lighten($font-color, 15%);
 
 $spacing-unit:     28px;
 
