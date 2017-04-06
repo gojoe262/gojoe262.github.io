@@ -1,14 +1,15 @@
 TODO
 -------------------------------------
-- Make font lighter color
-	- This makes it easier on the eyes. Less contrast
 - Make lightbox or direct link when clicking images
 - Create a simple logo or profile pic
+	- Profile pic could be a circle with img inside 
 - Create favicon
 - Add profile pic to about page
 - Create a "most popular" section for blog posts on the home page
 	- Add the post image there as well
 - Underline active page in header nav
+- Create a resume page
+	- This will contain either a pdf in an iframe, or actual text with a link to the pdf
 
 
 DOING
@@ -18,6 +19,8 @@ DOING
 
 DONE
 -------------------------------------
+- Make font lighter color
+	- This makes it easier on the eyes. Less contrast
 - Move Page title spacing from the page title to the header section. 
 - Move location from joe-schueller.github.io/blog/ to joe-schueller.github.io/
     - Done on local repository

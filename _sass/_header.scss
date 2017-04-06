@@ -30,7 +30,7 @@
 @media screen and (min-width: $content-width) {
     .page-header-content {
         max-width: $content-width + ($spacing-unit * 5);
-        padding: ($spacing-unit * 2) ($spacing-unit) ($spacing-unit * 3) ($spacing-unit);
+        padding: ($spacing-unit * 1.5) ($spacing-unit) ($spacing-unit * 2) ($spacing-unit);
         margin: 0 auto;
     }
 
