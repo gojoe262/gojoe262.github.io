@@ -13,7 +13,13 @@ disqus_id: 2016-04-03_Lane_Detection_Systems
 
 Detecting lane markings is a simple task for a human being, but for a computer, this is a very complex task. A human instantly spots patterns while a computer interprets the road as a set of pixels. Lane detection systems can be active or passive. Active systems use sensors, such as lasers and sonar, to gather and map the data of the surrounding area. These types of sensors are accurate and fast, but are prone to interference. Also, equipment for active systems are more expensive than equipment for passive systems. For these reasons, research in passive systems has been a growing topic. Passive systems do not introduce any interference to the surrounding area and only use visual data as input. Most passive systems rely on dash-mounted cameras to retrieve data. Passive systems have the benefit of being reasonably priced and readily available. Also, video frames contain a wealth of information that can be useful in lane detection systems. For this article, we will focus on passive systems.
 
-There are 4 steps a system runs through when detecting lanes: Preprocess, Feature Detection, Fitting, and Tracking.
+There are 4 steps a system runs through when detecting lanes:<br>
+<b> 
+    1. Preprocess, <br>
+    2. Feature Detection, <br> 
+    3. Fitting, <br>
+    4. Tracking <br>
+</b>
 
 ## 1. Preprocess ##
 Preprocessing has two main goals: remove visual noise and prepare the image for the next steps. Noise could include shadows, road discoloration, or other random noise in the image. The image can also be shrunk down to only the essential parts in an effort to decrease computational complexity.  
